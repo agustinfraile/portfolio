@@ -21,6 +21,7 @@ const IconsComponent = () => {
           className='about-animation-div--icon'
         >
         <IconCircle 
+          name={'Github'}
           image={github} 
           link='https://github.com/agustinfraile'
         />
@@ -36,6 +37,7 @@ const IconsComponent = () => {
           className='about-animation-div--icon'
         >
           <IconCircle 
+            name={'Linkedin'}
             image={linkedin} 
             link='https://www.linkedin.com/in/agustinfraile/'
           />

@@ -1,11 +1,14 @@
 import React from 'react';
 import './IconTech.css';
 
-const IconTech = ({img}) => {
+const IconTech = ({ img, name }) => {
   return (
     <div className='tech-cnt'>
-        <img src={ img } alt={`Imagen de ${img}`} 
-        title={`Imagen de ${img}`}/>
+        <img 
+          src={ img } 
+          alt={`Logo de ${name}`} 
+          title={`Logo de ${name}`}
+        />
         
     </div>
   )
