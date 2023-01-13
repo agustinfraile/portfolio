@@ -5,15 +5,18 @@ import Contact from '../Contact/Contact'
 import Intro from '../Intro/Intro'
 import Projects from '../Projects/Projects'
 
+import './Home.css';
 
 const Home = () => {
   return (
     <div>
-       {/* <NavBar /> */}
-       <Intro />
-       <About/>
-       <Projects />
-       <Contact />
+       <NavBar />
+       <div className="all-container">
+        <Intro />
+        <About/>
+        <Projects />
+        <Contact />
+       </div>
     </div>
   )
 }

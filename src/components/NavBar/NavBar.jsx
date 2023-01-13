@@ -18,6 +18,7 @@ const NavBar = () => {
   return (
     <div className='nav_cnt'>
         <div className='nav_cnt-logo'></div>
+        {/* <div className='nav_cnt-logo'></div> */}
         <ul>
           <a href="#inicio">
             <li>Inicio</li>
