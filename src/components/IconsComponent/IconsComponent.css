@@ -12,6 +12,11 @@
     display: flex;
 }
 
+.about-animation-div--icon {
+    /* background-color: darkgoldenrod; */
+    margin: 0 auto;
+}
+
 /* 800px para adelante */
 @media (min-width: 800px) {
     .icons_cnt {

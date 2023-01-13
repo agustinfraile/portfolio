@@ -27,18 +27,22 @@ const About = () => {
 
         <div 
           className='about-cnt-text'
-          data-aos="fade-right"
-          data-aos-duration='2000'
         >
-          <h2>Conocimientos</h2>
-          
-          <div className='about-cnt-tech'>
-            <IconTech className='iconTech' img={ htmlLogo } />
-            <IconTech className='iconTech' img={ cssLogo } />
-            <IconTech className='iconTech' img={ jsLogo } />
-            <IconTech className='iconTech' img={ nodeLogo } />
-            <IconTech className='iconTech' img={ expressLogo } />
-            <IconTech className='iconTech' img={ sqlLogo } />
+          <div 
+            data-aos="fade-right"
+            data-aos-duration='2000'
+            className='about-animation-div'
+          >
+            <h2>Conocimientos</h2>
+            
+            <div className='about-cnt-tech'>
+              <IconTech className='iconTech' img={ htmlLogo } />
+              <IconTech className='iconTech' img={ cssLogo } />
+              <IconTech className='iconTech' img={ jsLogo } />
+              <IconTech className='iconTech' img={ nodeLogo } />
+              <IconTech className='iconTech' img={ expressLogo } />
+              <IconTech className='iconTech' img={ sqlLogo } />
+            </div>
           </div>
         </div>
 
@@ -48,16 +52,19 @@ const About = () => {
         
         <div 
           className='about-cnt-text'
-          data-aos="fade-left"
-          data-aos-duration='2000'
         >
-          <h2>Formacion</h2>
-          <div className='about-cnt-education'>
-            <IconEducation img={ coderLogo } />
-            <IconEducation img={ henryLogo } />
-            <IconEducation img={ utnLogo } />
-            <IconEducation img={ udemyLogo } />
-
+          <div 
+            data-aos="fade-right"
+            data-aos-duration='2000'
+            className='about-animation-div'
+          >
+            <h2>Formacion</h2>
+            <div className='about-cnt-education'>
+              <IconEducation img={ coderLogo } />
+              <IconEducation img={ henryLogo } />
+              <IconEducation img={ utnLogo } />
+              <IconEducation img={ udemyLogo } />
+          </div>
           </div>
         </div>
 

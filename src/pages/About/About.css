@@ -27,10 +27,15 @@
 
 /* CONTENEDOR PARA EL TEXTO DE LAS SECCIONES */
 .about-cnt-text {
-    /* background-color: rgb(171, 109, 138); */
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+.about-animation-div {
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(171, 109, 138); */
 }
 
 .about-cnt-tech {

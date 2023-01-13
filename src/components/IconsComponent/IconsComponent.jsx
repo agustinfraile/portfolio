@@ -13,25 +13,33 @@ const IconsComponent = () => {
   return (
     <div className='icons_cnt'>
       <div
-        data-aos="fade-right"
-        data-aos-duration='2000'
         className='icon-div'
       >
+        <div 
+          data-aos="fade-right"
+          data-aos-duration='2000'
+          className='about-animation-div--icon'
+        >
         <IconCircle 
           image={github} 
           link='https://github.com/agustinfraile'
         />
       </div>
+      </div>
 
       <div
-        data-aos="fade-left"
-        data-aos-duration='2000'
         className='icon-div'
       >
-        <IconCircle 
-          image={linkedin} 
-          link='https://www.linkedin.com/in/agustinfraile/'
-        />
+        <div 
+          data-aos="fade-left"
+          data-aos-duration='2000'
+          className='about-animation-div--icon'
+        >
+          <IconCircle 
+            image={linkedin} 
+            link='https://www.linkedin.com/in/agustinfraile/'
+          />
+        </div>
       </div>
     </div>
   )

@@ -10,9 +10,11 @@ const Projects = () => {
 
   return (
     <div className='project-cnt' id='projects'>
-        <div className='project-cnt_title'
-                  data-aos="fade-up"
-                  data-aos-duration='2000'>
+        <div 
+          className='project-cnt_title'
+          data-aos="fade-up"
+          data-aos-duration='2000'
+        >
             <h3>
                 Proyectos en los que trabajé
             </h3>
