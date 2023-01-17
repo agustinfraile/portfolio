@@ -1,6 +1,7 @@
 /* MOBILE */
 .nav_cnt {
-    background-color: rgba(0, 0, 0, 0.996);
+    /* background-color: rgba(0, 0, 0, 0.996); */
+    background-color: rgba(77, 77, 77, 0.778);
     width: 100%;
     height: auto;
     display: flex; 
@@ -18,22 +19,22 @@
 
 .nav_cnt-logos--icon {
     /* background-color: rgba(255, 255, 255, 0.252); */
-    width: 5em;
-    height: 5em;
+    width: 3em;
+    height: 3em;
     padding: .5em ;
 }
 
 .nav_cnt-logos--menu {
     /* background-color: rgba(107, 32, 32, 0.773); */
-    background-color: rgba(255, 255, 255, 0.252);
+    /* background-color: rgba(255, 255, 255, 0.252); */
 
-    width: 5em;
-    height: 5em;
+    width: 3em;
+    height: 3em;
 }
 
 .nav_cnt-logos--menu img {
     width: 100%;
-    padding: 1.5em;
+    padding: .5em;
 }
 
 .nav_cnt ul {
