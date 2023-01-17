@@ -1,7 +1,8 @@
 /* MOBILE */
 .nav_cnt {
     /* background-color: rgba(0, 0, 0, 0.996); */
-    background-color: rgba(77, 77, 77, 0.778);
+    /* background-color: rgba(77, 77, 77, 0.778); */
+    background-color: #0058ddec;
     width: 100%;
     height: auto;
     display: flex; 

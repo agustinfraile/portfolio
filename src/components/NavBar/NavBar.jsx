@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import cv from '../../assets/images/icons/cv-logo.png';
 import pdf from '../../assets/pdf/cv.pdf';
 
-import menu from '../../assets/images/icons/navbar/menu.png';
-import close from '../../assets/images/icons/navbar/x.png';
+import menu from '../../assets/images/icons/navbar/menu-light.png';
+import close from '../../assets/images/icons/navbar/x-light.png';
 
 import '../NavBar/NavBar.css';
 
