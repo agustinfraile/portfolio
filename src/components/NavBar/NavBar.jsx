@@ -44,6 +44,7 @@ const NavBar = () => {
             <img src={isToggled ? close : menu} alt="Menu" />
           </div>
         </div>
+        
         {/* <div className='nav_cnt-logo'></div> */}
         <div 
           className={`navbar-toggle ${isToggled ? '' : 'invisible'}`}
