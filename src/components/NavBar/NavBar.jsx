@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import cv from '../../assets/images/icons/cv-logo.png';
-import pdf from '../../assets/pdf/cv.pdf';
+import pdf from '../../assets/pdf/CV_FullStack_Fraile-Agustin.pdf';
 
 import menu from '../../assets/images/icons/navbar/menu-light.png';
 import close from '../../assets/images/icons/navbar/x-light.png';

@@ -14,6 +14,20 @@ export const cards = [
         id: (Math.random()*3).toFixed(5),
     },
     {
+        link:'https://huellitasapp.netlify.app/home',
+        image:'https://res.cloudinary.com/dmz6gyyoo/image/upload/v1678982846/znr34amqe0r0lhitjbrq.png',
+        title: "Huellitas App",
+        description: "Web app que facilita la adopción de mascotas y la financiacion de las fundaciones mediante campañas de donaciones.",
+        id: (Math.random()*3).toFixed(5),
+    },
+    {
+        link:'https://webdogsapp.netlify.app/',
+        image:'https://res.cloudinary.com/dmz6gyyoo/image/upload/v1678699749/to5kn2brlzuze2izzev9.png',
+        title: "Web Dogs",
+        description: "Descubre la amplia variedad de razas de perros en nuestra web. Explora información detallada de cada raza y encuentra tu compañero canino ideal",
+        id: (Math.random()*3).toFixed(5),
+    },
+    {
         link:'https://simulador-de-creditos-alpha.vercel.app/',
         image:'https://res.cloudinary.com/dmz6gyyoo/image/upload/v1673555045/k9wuxt8ohkgqxphf3sr2.png',
         title: "Simulador de creditos",
