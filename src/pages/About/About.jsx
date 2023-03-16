@@ -6,7 +6,7 @@ import htmlLogo from '../../assets/images/icons/tech-logos/html.png'
 import cssLogo from '../../assets/images/icons/tech-logos/css.png';
 import jsLogo from '../../assets/images/icons/tech-logos/js.png'
 import nodeLogo from '../../assets/images/icons/tech-logos/node.png'
-import expressLogo from '../../assets/images/icons/tech-logos/express.png'
+import reactLogo from '../../assets/images/icons/tech-logos/react.png'
 import sqlLogo from '../../assets/images/icons/tech-logos/sql.png'
 import coderLogo from '../../assets/images/icons/formacion-logos/coder.png'
 import henryLogo from '../../assets/images/icons/formacion-logos/henry.png'
@@ -58,8 +58,8 @@ const About = () => {
               />
               <IconTech 
                 className='iconTech' 
-                img={ expressLogo } 
-                name={'Express'}
+                img={ reactLogo } 
+                name={'React'}
               />
               <IconTech 
                 className='iconTech' 
