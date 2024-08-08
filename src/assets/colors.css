@@ -1,0 +1,8 @@
+/* variables de los colores que se van a usar en toda la web */
+:root {
+    --black: #000000;
+    --dark-blue: #2b4c7e;
+    --light-blue: #567ebb;
+    --light-gray: #dce0e6;
+    --white: #ffffff;
+}

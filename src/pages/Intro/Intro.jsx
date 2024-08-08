@@ -7,36 +7,23 @@ import './Intro.css';
 const Intro = () => {
   AOS.init();
   return (
-    <div className='intro_cnt' id='inicio'>
-        <div className='first_cnt'>
-
-            <div 
-                className='first_cnt-img'                  data-aos="fade-right"
-                data-aos-duration='2000'
-            >
-
-               <div className='first_cnt-img--inside' >
-                    <img src={profilePicture} alt="Imagen de perfil" />
-               </div>
-
-            </div>
-
-
+    <section className='section-intro'>
+        <div className='section-intro_image-container'>
+            <img src={profilePicture} alt='Imagen de perfil' className='section-intro_image-container--image' />
         </div>
-        <div className='sec_cnt'>
-            <div 
-                className='sec_cnt-text'
-                data-aos="fade-down"
-                data-aos-duration='2000'
-            >
-                <h1>Hola! soy Agustin</h1>
-                <p>
-                Soy un desarrollador con experiencia en dar vida a proyectos digitales. Me apasiona el mundo del desarrollo web. Si estas buscando un desarrollador con ganas de trabajar en proyectos interesantes, no dudes en contactarme!
-                </p>
+
+        <div className='section-intro_title-container'>
+            <div className='section-intro_title-container--title'>
+                <h1>
+                    AGUSTIN FRAILE
+                </h1>
+                <h3>
+                    &lt; Desarrollador web /&gt;
+                </h3>
             </div>
-        </div>
-    </div>
+        </div>       
+    </section>
   )
 }
 
-export default Intro
+export default Intro    

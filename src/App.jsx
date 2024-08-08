@@ -8,12 +8,11 @@ function App() {
 
   return (
     <BrowserRouter>
-    <NavBar />
+      <NavBar />
       <div className="App">
         <Routes>
-          <Route exact path='/' element={<Home/>} />
-          {/* <Route exact path='/' element={<Home/>} /> */}
-          <Route path='/*' element={<Error/>} />
+          <Route exact path='/' element={<Home />} />
+          <Route path='/*' element={<Error />} />
         </Routes>
       </div>
     </BrowserRouter>
