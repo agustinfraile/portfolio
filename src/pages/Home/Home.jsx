@@ -1,4 +1,4 @@
-import React from 'react';
+
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Intro from '../Intro/Intro';
@@ -11,9 +11,9 @@ const Home = () => {
 
     <div className="all-container">
       <Intro />
-      {/* <About />
+      <About />
       <Projects />
-      <Contact /> */}
+      {/* <Contact /> */}
     </div>
 
   )

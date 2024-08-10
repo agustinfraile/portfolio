@@ -1,151 +1,34 @@
+@import '/src/assets/colors.css';
 
-/* CONTENEDOR GENERAL */
-.about-cnt {
-    /* background-color: rgb(16, 161, 161); */
+.section-about {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    background-color: var(--dark-blue);
 }
 
-/* CONTENEDOR PARA EL PRIMERA SECCION */
-.about-cnt-first {
-    /* background-color: rgb(121, 161, 49); */
-    background-color: #91B6FF;
+.section-about-container_title {
     width: 100%;
-    height: auto;
-    padding: 4em 0;
-}
-
-/* CONTENEDOR PARA LA SEGUNDA SECCION */
-.about-cnt-sec {
-    /* background-color: rgb(49, 133, 161); */
-    background-color: #495B80;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 1em 0;
-}
-
-/* CONTENEDOR PARA EL TEXTO DE LAS SECCIONES */
-.about-cnt-text {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.about-animation-div {
-    width: 100%;
-    height: auto;
-    /* background-color: rgb(171, 109, 138); */
-}
-
-.about-cnt-tech {
+    height: 30%;
+    display: flex;
+    align-items: center;
     /* background-color: antiquewhite; */
-    width: 80%;
-    padding: 2em 0;
-    margin: 0 auto;
 }
 
-.about-cnt-education {
-    /* background-color: antiquewhite; */
-    width: 80%;
-    padding: 2em 2.5em;
+.section-about-container_title h3 {
+    width: 90%;
     margin: 0 auto;
+    color: var(--white);
+    font-size: 2.5rem;
+    padding: 1rem;
+    /* background-color: brown; */
 }
 
-/* ESTILOS PARA EL TITULO DE CADA SECCION */
-.about-cnt-text h2 {
-    /* background-color: rgb(49, 133, 161); */
+.section-about-container_cards {
     width: 100%;
-    height: auto;
-    font-size: 2.2em;
-    text-align: center;
-}
-
-/* ESTILOS PARA EL PARRAFO DE CADA SECCION */
-.about-cnt-text p {
-    font-size: 1.4em;
-    text-align: center;
-    padding-top: .5em;
-}
-
-
-/* 800px para adelante */
-@media (min-width: 800px) {
-    /* CONTENEDOR GENERAL */
-    .about-cnt {
-        /* background-color: rgb(16, 161, 161); */
-        width: 100%;
-        height: auto;
-    }
-
-        /* CONTENEDOR PARA EL PRIMERA SECCION */
-        .about-cnt-first {
-            /* background-color: rgb(121, 161, 49); */
-            width: 100%;
-            height: 45vh;
-            padding: 2.5em 0;
-        }
-
-        /* CONTENEDOR PARA LA SEGUNDA SECCION */
-        .about-cnt-sec {
-            /* background-color: rgb(49, 133, 161); */
-            width: 100%;
-            height: 60vh;
-            padding: 1em 0;
-        }
-
-            /* CONTENEDOR PARA EL TEXTO DE LAS SECCIONES */
-            .about-cnt-text {
-                /* background-color: rgb(171, 109, 138); */
-                /* display: flex; */
-                /* flex-direction: row; */
-                width: 80%;
-                height: auto;
-                margin: 0 auto;
-            }
-            
-            .about-cnt-tech {
-                /* background-color: rgba(0, 0, 0, 0.416); */
-                width: 90%;
-                height: auto;
-                margin: 2em auto;
-                padding: 1em;
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-
-            .about-cnt-education {
-                /* background-color: rgba(0, 0, 0, 0.416); */
-                width: 90%;
-                height: auto;
-                margin: 2em auto;
-                padding: 1em;
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-
-                /* ESTILOS PARA EL TITULO DE CADA SECCION */
-                .about-cnt-text h2 {
-                    /* background-color: rgb(122, 110, 153); */
-                    font-size: 2.2em;
-                    text-align: center;
-                    margin: 1em 0em;
-                    /* padding-top: 4em; */
-                }
-
-                /* ESTILOS PARA EL PARRAFO DE CADA SECCION */
-                .about-cnt-text p {
-                    /* background-color: rgb(153, 110, 136); */
-                    font-size: 1.5em;
-                    text-align: center;
-                    padding-top: 5em;
-                    padding-left: .8em;
-                    padding-right: .8em;
-                    padding-bottom: 5em;
-
-                }
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    /* background-color: aquamarine; */
 }

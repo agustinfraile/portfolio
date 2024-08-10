@@ -1,112 +1,44 @@
-import React from 'react';
 import AOS from 'aos';
-import IconTech from '../../components/IconTech/IconTech';
-import IconEducation from '../../components/IconEducation/IconEducation';
-import htmlLogo from '../../assets/images/icons/tech-logos/html.png'
-import cssLogo from '../../assets/images/icons/tech-logos/css.png';
-import jsLogo from '../../assets/images/icons/tech-logos/js.png'
-import nodeLogo from '../../assets/images/icons/tech-logos/node.png'
-import reactLogo from '../../assets/images/icons/tech-logos/react.png'
-import sqlLogo from '../../assets/images/icons/tech-logos/sql.png'
-import coderLogo from '../../assets/images/icons/formacion-logos/coder.png'
-import henryLogo from '../../assets/images/icons/formacion-logos/henry.png'
-import utnLogo from '../../assets/images/icons/formacion-logos/utn.png'
-import udemyLogo from '../../assets/images/icons/formacion-logos/udemy.png'
 
+import iconFrontend from '../../assets/images/icons/frontend.png';
+import iconBackend from '../../assets/images/icons/back-end.png';
+import iconDatabase from '../../assets/images/icons/data-base.png';
 
 import './About.css';
+import CardBackground from '../../components/CardBackground/CardBackground';
 
 const About = () => {
 
   AOS.init();
 
   return (
-    <div className='about-cnt'  id='sobre-mi'>
-
-      <div className='about-cnt-first'>
-
-        <div 
-          className='about-cnt-text'
-        >
-          <div 
-            data-aos="fade-right"
-            data-aos-duration='2000'
-            className='about-animation-div'
-          >
-            <h2>Conocimientos</h2>
-            
-            <div className='about-cnt-tech'>
-              <IconTech 
-                className='iconTech' 
-                img={ htmlLogo } 
-                name={'HTML'}
-              />
-              <IconTech 
-                className='iconTech' 
-                img={ cssLogo } 
-                name={'CSS'}
-              />
-              <IconTech 
-                className='iconTech' 
-                img={ jsLogo } 
-                name={'JS'}
-              />
-              <IconTech 
-                className='iconTech' 
-                img={ nodeLogo } 
-                name={'Node'}
-              />
-              <IconTech 
-                className='iconTech' 
-                img={ reactLogo } 
-                name={'React'}
-              />
-              <IconTech 
-                className='iconTech' 
-                img={ sqlLogo } 
-                name={'SQL'}
-              />
-            </div>
-          </div>
-        </div>
-
+    <section className='section-about'>
+      <div className='section-about-container_title'>
+        <h3>
+          Áreas de especialización
+        </h3>
       </div>
-
-      <div className='about-cnt-sec'>
-        
-        <div 
-          className='about-cnt-text'
-        >
-          <div 
-            data-aos="fade-right"
-            data-aos-duration='2000'
-            className='about-animation-div'
-          >
-            <h2>Formacion</h2>
-            <div className='about-cnt-education'>
-              <IconEducation 
-                img={ coderLogo } 
-                name={'CoderHouse'}
-              />
-              <IconEducation 
-                img={ henryLogo } 
-                name={'Henry'}
-              />
-              <IconEducation 
-                img={ utnLogo } 
-                name={'UTN'}
-              />
-              <IconEducation 
-                img={ udemyLogo } 
-                name={'Udemy'}
-              />
-          </div>
-          </div>
-        </div>
-
+      <div className='section-about-container_cards'>
+        <CardBackground 
+          title='Frontend'
+          description='Desarrollo interfaces de usuario responsivas y atractivas utilizando HTML, CSS, JavaScript, y React.'
+          image={iconFrontend}
+          alt='Icono Frontend'
+        />
+        <CardBackground 
+          title='Backend'
+          description='Consumo APIs con Node.js y Express, asegurando eficiencia en la lógica del servidor.'
+          image={iconBackend}
+          alt='Icono Backend'
+        />
+        <CardBackground 
+          title='Bases de datos'
+          description='Gestiono bases de datos SQL y NoSQL como MongoDB, asegurando estructuras de datos optimizadas.'
+          image={iconDatabase}
+          alt='Icono Bases de datos'
+        />
       </div>
-      
-    </div>
+    </section>
   )
 }
 

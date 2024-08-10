@@ -1,4 +1,3 @@
-import React from 'react';
 import profilePicture from '../../assets/images/image-profile.png';
 import AOS from 'aos';
 
@@ -18,7 +17,7 @@ const Intro = () => {
                     AGUSTIN FRAILE
                 </h1>
                 <h3>
-                    &lt; Desarrollador web /&gt;
+                    &lt;Desarrollador web /&gt;
                 </h3>
             </div>
         </div>       
