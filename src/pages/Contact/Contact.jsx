@@ -8,8 +8,7 @@ const Contact = () => {
     AOS.init();
 
   return (
-    <div className='contact-cnt' id='contact'>
-
+    <div className='section-contact'>
 
     </div>
   )

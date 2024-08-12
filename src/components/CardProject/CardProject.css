@@ -1,0 +1,51 @@
+@import '/src/assets/colors.css';
+
+.card_project-container  {
+    width: 18rem;
+    height: 18rem;
+    background-color: var(--light-gray);
+    opacity: 0.8;
+    border-radius: 1rem;
+    border: 6px solid var(--dark-blue);
+    box-shadow: 1px 1px 15px 5px var(--black);
+}
+
+.card_project-container_image {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_project-container_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+    /* background-color: thistle; */
+}
+
+.card_project-container_info h4 {
+    width: 90%;
+    color: var(--black);
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem 0;
+
+    /* background-color: yellow; */
+}
+
+.card_project-container_info p {
+    width: 90%;
+    color: var(--black);
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    /* background-color: turquoise; */
+}

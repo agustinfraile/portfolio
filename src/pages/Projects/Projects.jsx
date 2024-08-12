@@ -1,6 +1,7 @@
 import AOS from 'aos';
 
 import './Projects.css';
+import CardProject from '../../components/CardProject/CardProject';
 
 const Projects = () => {
 
@@ -13,7 +14,11 @@ const Projects = () => {
           Mis proyectos
         </h3>
       </div>
-
+      <div className='section-project-container_cards'>
+        <CardProject />
+        <CardProject />
+        <CardProject />
+      </div>
     </section>
   )
 }

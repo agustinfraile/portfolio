@@ -20,3 +20,13 @@
     padding: 1rem;
     /* background-color: brown; */
 }
+
+.section-project-container_cards {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+}
