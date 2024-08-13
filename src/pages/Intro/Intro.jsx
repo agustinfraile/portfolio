@@ -17,7 +17,7 @@ const Intro = () => {
                     AGUSTIN FRAILE
                 </h1>
                 <h3>
-                    &lt;Desarrollador web /&gt;
+                    &lt;desarrollador web /&gt;
                 </h3>
             </div>
         </div>       
