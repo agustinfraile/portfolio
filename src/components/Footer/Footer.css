@@ -1,0 +1,59 @@
+@import '/src/assets/colors.css';
+
+
+.section-footer {
+    width: 100%;
+    height: 30vh;
+    background-color: var(--dark-blue);
+    display: flex;
+}
+
+.section-footer-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: antiquewhite; */
+}
+
+.section-footer-left_icons {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: thistle; */
+}
+
+.section-footer-left_icons img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem;
+}
+
+.section-footer-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: azure; */
+}
+
+.section-footer-left-up {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--white);
+    border-radius: 50%;   
+}
+
+
+.section-footer-left-up img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

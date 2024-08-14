@@ -1,10 +1,12 @@
+import './About.css';
+
+
 import AOS from 'aos';
 
 import iconFrontend from '../../assets/images/icons/frontend.png';
 import iconBackend from '../../assets/images/icons/back-end.png';
 import iconDatabase from '../../assets/images/icons/data-base.png';
 
-import './About.css';
 import CardBackground from '../../components/CardBackground/CardBackground';
 
 const About = () => {
@@ -19,19 +21,19 @@ const About = () => {
         </h3>
       </div>
       <div className='section-about-container_cards'>
-        <CardBackground 
+        <CardBackground
           title='Frontend'
           description='Desarrollo interfaces de usuario responsivas y atractivas utilizando HTML, CSS, JavaScript, y React.'
           image={iconFrontend}
           alt='Icono Frontend'
         />
-        <CardBackground 
+        <CardBackground
           title='Backend'
           description='Consumo APIs con Node.js y Express, asegurando eficiencia en la lógica del servidor.'
           image={iconBackend}
           alt='Icono Backend'
         />
-        <CardBackground 
+        <CardBackground
           title='Bases de datos'
           description='Gestiono bases de datos SQL y NoSQL como MongoDB, asegurando estructuras de datos optimizadas.'
           image={iconDatabase}
