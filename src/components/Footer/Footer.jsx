@@ -15,21 +15,21 @@ const Footer = () => {
         <section className='section-footer'>
             <div className='section-footer-left'>
                 <div className='section-footer-left_icons'>
-                    <a href='/' target='_blank'>
+                    <a href='https://www.linkedin.com/in/agustinfraile/' target='_blank'>
                         <img src={iconLinkedIn} alt='Icono LinkedIn' />
                     </a>
 
-                    <a href="/" target='_blank'>
+                    <a href="https://github.com/agustinfraile" target='_blank'>
                         <img src={iconGithub} alt='Icono Github' />
                     </a>
                 </div>
             </div>
 
-            <div className='section-footer-right'>
+            {/* <div className='section-footer-right'>
                 <div className='section-footer-left-up' onClick={goUp}>
                     <img src={arrowUp} alt='Icono Flecha arriba' />
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }
