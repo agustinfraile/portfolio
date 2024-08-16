@@ -37,14 +37,16 @@
     justify-content: center;
     align-items: center;
     margin: 0 1rem;
-    /* border-radius: 50%; */
-    /* background-color: azure; */
+    border-radius: 50%;
+    background-color: var(--white);
 }
 
 .section-footer-left_icons img {
     width: 3.2rem;
     height: 3.2rem;
     margin: 0 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
 }
 
 .section-footer-right {
