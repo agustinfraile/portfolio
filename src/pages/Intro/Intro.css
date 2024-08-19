@@ -18,9 +18,9 @@
 
 .section-intro_image-container--image {
     width: 70%;
-    border: 8px solid var(--white);
-    border-radius: 50%;
-    box-shadow: 0 0 10px 5px var(--dark-blue);
+    border: 5px solid var(--white);
+    border-radius: 10%;
+    box-shadow: 4px 4px 18px 18px var(--dark-blue);
 }
 
 .section-intro_title-container {
@@ -45,6 +45,7 @@
     color: var(--white);
     font-size: 5.5rem;
     text-align: center;
+    user-select: none;
 
     /* background-color: yellowgreen; */
     

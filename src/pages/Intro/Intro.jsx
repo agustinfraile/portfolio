@@ -1,4 +1,4 @@
-import profilePicture from '../../assets/images/image-profile.png';
+import profilePicture from '../../assets/images/image-profiles.png';
 import AOS from 'aos';
 
 import './Intro.css';
@@ -17,7 +17,7 @@ const Intro = () => {
                     AGUSTIN FRAILE
                 </h1>
                 <h3>
-                    &lt;desarrollador web /&gt;
+                    &lt; Desarrollador Web /&gt;
                 </h3>
             </div>
         </div>       
