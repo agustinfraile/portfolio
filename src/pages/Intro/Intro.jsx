@@ -14,7 +14,12 @@ const Intro = () => {
 
             <div className='section-intro_title-container'>
                 <div className='section-intro_title-container--title'>
-                    <h1>
+                    <h1
+                        data-aos='fade-right'
+                        data-aos-duration='2500'
+                        data-aos-delay='100'
+                        data-aos-once='true'
+                    >
                         AGUSTIN FRAILE
                     </h1>
                     <h3>
