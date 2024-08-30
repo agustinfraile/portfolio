@@ -7,8 +7,6 @@ import './Contact.css';
 
 const Contact = () => {
 
-  AOS.init();
-
   return (
     <div className='section-contact'>
       <div className='section-contact-container_title'>
