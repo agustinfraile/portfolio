@@ -1,11 +1,18 @@
 import profilePicture from '../../assets/images/image-profiles.png';
 import AOS from 'aos';
 import Typewriter from 'typewriter-effect';
+import ButtonCv from '../../components/ButtonCv/ButtonCv';
+
 
 import './Intro.css';
 
 const Intro = () => {
     AOS.init();
+
+
+
+
+
     return (
         <section className='section-intro'>
             <div className='section-intro_image-container'>
@@ -33,6 +40,8 @@ const Intro = () => {
                             }}
                         />
                     </h3>
+
+                    <ButtonCv />
                 </div>
             </div>
         </section>
