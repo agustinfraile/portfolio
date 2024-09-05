@@ -1,9 +1,12 @@
 @import '/src/assets/colors.css';
 
 .contact-form {
-    width: 60%;
+    width: 40%;
     height: auto;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.151);
+    /* background-color: teal; */
 }
 
 .contact-form-input {
@@ -13,6 +16,8 @@
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
+
+    /* background-color: wheat; */
 }
 
 .contact-form-input label {
@@ -22,6 +27,8 @@
     margin: .3rem auto;
     display: flex;
     color: var(--dark-blue);
+
+    /* background-color: thistle; */
 }
 
 .contact-form-input .contact-form-input-field {
@@ -31,6 +38,8 @@
     padding: 0.5rem;
     font-size: 1.5rem;
     color: var(--dark-blue);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.151);
+    border: none;
 }
 
 .contact-form-textarea {
@@ -39,6 +48,8 @@
     margin: 1rem auto;
     padding: 0.5rem;
     font-size: 1.5rem;
+
+    /* background-color: wheat; */
 }
 
 .contact-form-textarea label {
@@ -49,6 +60,7 @@
     display: flex;
     color: var(--dark-blue);
 
+    /* background-color: thistle; */
 }
 
 .contact-form-textarea .contact-form-textarea-field {
@@ -59,6 +71,8 @@
     padding: 0.5rem;
     font-size: 1.5rem;
     color: var(--dark-blue);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.151);
+    border: none;
 }
 
 .contact-form-button {
@@ -76,6 +90,14 @@
     transition: 0.5s;
 }
 
+.contact-form-button--disabled {
+    background-color: var(--light-blue);
+    color: var(--white);
+    transition: 0.5s;
+    transform: scale(1.1);
+    cursor: not-allowed;
+}
+
 .contact-form-button:hover {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -86,9 +108,9 @@
 .contact-form-error {
     width: 100%;
     height: auto;
-    margin: 1rem auto;
+    margin: .5rem auto;
     display: flex;
     justify-content: center;
     color: var(--error);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }

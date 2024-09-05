@@ -13,7 +13,7 @@ const CardProject = () => {
                     <div
                         className='card_project-container_image_gif'
                     >
-                        <iframe src="https://giphy.com/embed/VkamTLhc9HkiclBRma" width="400" height="480" class="giphy-embed" ></iframe>
+                        <iframe src="https://giphy.com/embed/VkamTLhc9HkiclBRma" width="400" height="480" className="giphy-embed" ></iframe>
                     </div>
                 </div>
             </div>
