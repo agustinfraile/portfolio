@@ -41,8 +41,8 @@ const ButtonCv = () => {
                 show={showModal}
                 onClose={handleCloseModal}
                 pdf={CV}
+                handleDownload={handleDownload}
             >
-                <iframe src={CV} title="CV" width="100%" height="500px"></iframe>
             </ModalCV>
         </>
     )
