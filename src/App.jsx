@@ -9,7 +9,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <NavBar /> */}
       <NavbarCnt />
       <div className="App">
         <Routes>

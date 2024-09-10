@@ -1,29 +1,46 @@
 import './CardProject.css';
 
-import imageProjectOne from '../../assets/images/icons/formacion-logos/udemy.png';
+import { motion } from 'framer-motion';
 
-const CardProject = () => {
+const CardProject = ({
+        title = 'Proyecto Example',
+        description = 'Descripción del proyecto',
+        tech = [],
+        imageUrl = '/placeholder.svg?height=200&width=300&text=Project',
+        link = '#'
+    }) => {
     return (
-        <div className='card_project'>
-            <div className='card_project-container'>
-                <div
-                    className='card_project-container_image'
-                >
-                    {/* <img src={imageProjectOne} alt='Imagen del proyecto' /> */}
-                    <div
-                        className='card_project-container_image_gif'
-                    >
-                        <iframe src="https://giphy.com/embed/VkamTLhc9HkiclBRma" width="400" height="480" className="giphy-embed" ></iframe>
+        <motion.div
+            className="project-card"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+        >
+            <div className="card">
+                <div className="card-header">
+                    <h3 className="card-title">{title}</h3>
+                    <p className="card-description">
+                        {Array.isArray(tech) && tech.length > 0 ? tech.join(', ') : 'Tecnologías no especificadas'}
+                    </p>
+                </div>
+                <div className="card-content">
+                    <p className="description">{description}</p>
+                    <div className="image-container">
+                        <img
+                            src={imageUrl}
+                            alt={`${title} imagen`}
+                            className="project-image"
+                        />
                     </div>
+
+                    <a href={link} target
+                    ="_blank" rel="noreferrer">
+                        <button className="btn">Ver Repositorio</button>
+                    </a>
                 </div>
             </div>
-
-            <div className='card_project-container_info'>
-                <h4>Curso de React</h4>
-                <p>Curso de React en Udemy</p>
-            </div>
-        </div>
-    )
+        </motion.div>
+    );
 }
 
 export default CardProject;
