@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import CV from '../../assets/pdf/CV_FullStack_Fraile-Agustin.pdf';
+import ModalCV from '../ModalCV/ModalCV';
 
 
 import './ButtonCv.css';
-import ModalCV from '../ModalCV/ModalCV';
 
 const ButtonCv = () => {
 

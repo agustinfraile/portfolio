@@ -33,15 +33,17 @@
     /* background-color: blueviolet; */
 }
 
+/* Tamaño más pequeño para tablets */
 @media (max-width: 768px) {
     .section-project-container_title h2 {
-        font-size: 1.8rem; /* Tamaño más pequeño para tablets */
+        font-size: 1.8rem; 
     }
 }
 
+/* Tamaño más pequeño para móviles */
 @media (max-width: 480px) {
     .section-project-container_title h2 {
-        font-size: 1.5rem; /* Tamaño más pequeño para móviles */
+        font-size: 1.5rem; 
     }
 }
 
@@ -54,22 +56,5 @@
     flex-wrap: wrap;
     justify-content: center; 
     gap: 20px; 
-    /* background-color: aqua; */
-}
-
-.project-card {
-    width: 100%; 
-    margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-    .project-card {
-        width: 45%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .project-card {
-        width: 45%;
-    }
+    background-color: aqua;
 }

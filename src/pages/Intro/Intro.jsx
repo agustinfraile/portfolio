@@ -1,4 +1,3 @@
-import profilePicture from '../../assets/images/image-profiles.png';
 import AOS from 'aos';
 import Typewriter from 'typewriter-effect';
 import ButtonCv from '../../components/ButtonCv/ButtonCv';

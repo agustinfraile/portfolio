@@ -33,9 +33,14 @@ const CardProject = ({
                         />
                     </div>
 
-                    <a href={link} target
-                    ="_blank" rel="noreferrer">
-                        <button className="btn">Ver Repositorio</button>
+                    <a 
+                        href={link} 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <button className="btn">
+                            Ver Repositorio
+                        </button>
                     </a>
                 </div>
             </div>

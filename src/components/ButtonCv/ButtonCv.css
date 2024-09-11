@@ -2,7 +2,7 @@
     background-color: #1f1f1f;
     color: #fff;
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     border: 2px solid transparent;
     border-radius: 8px;
@@ -25,4 +25,20 @@
 .buttonCV_container:active {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
+}
+
+/* Ajustes para tablets */
+@media (min-width: 768px) {
+    .buttonCV_container {
+        font-size: 16px;
+        padding: 14px 28px;
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1024px) {
+    .buttonCV_container {
+        font-size: 18px;
+        padding: 16px 32px;
+    }
 }

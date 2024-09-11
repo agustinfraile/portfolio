@@ -2,25 +2,20 @@
 .skills-section {
   width: 100%;
   background-color: #1e40af;
-  padding: 1rem;
-}
-
-/* Altura de la sección para pantallas grandes */
-@media (min-width: 1024px) {
-  .skills-section {
-    height: 100vh;
-  }
 }
 
 /* Contenedor de la sección */
 .skills-section-container {
-  max-width: 80%;
+  max-width: 90%;
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+
+  /* background-color: yellowgreen; */
 }
 
 /* Título */
@@ -57,6 +52,8 @@
   grid-template-columns: repeat(1, 1fr);
   gap: 24px;
   justify-content: center;
+
+  /* background-color: bisque; */
 }
 
 /* Media query para tablets */
@@ -74,6 +71,10 @@
 /* Media query para pantallas grandes */
 @media (min-width: 1024px) {
 
+  .skills-section {
+    height: 100vh;
+  }
+
   .skills-section h2 {
     font-size: 2.5rem;
   }
@@ -83,43 +84,3 @@
   }
 }
 
-/* Estilos de las tarjetas (cards) */
-.project-card {
-  width: 250px; /* Ancho fijo de las tarjetas */
-  height: 350px; /* Alto fijo de las tarjetas */
-  margin-bottom: 20px;
-  background-color: #1e3a8a; /* Azul oscuro */
-  color: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Asegurar que el contenido de la tarjeta esté bien alineado */
-.card-header,
-.card-content {
-  text-align: center;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
-.card-description {
-  color: #bfdbfe;
-  margin-bottom: 10px;
-}
-
-.project-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}

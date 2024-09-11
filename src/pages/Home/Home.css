@@ -1,9 +1,0 @@
-.all-container {
-    padding-top: 3em;
-}
-
-@media (min-width: 800px) {
-    .all-container {
-        padding-top: 0em;
-    }
-}
