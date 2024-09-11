@@ -1,11 +1,9 @@
+import './ContactForm.css';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import validationSchema from './ContactFormValidation';
-import './ContactForm.css';
 
 
 const ContactForm = () => {
-
-
 
     return (
         <>
