@@ -2,6 +2,7 @@
 .skills-section {
   width: 100%;
   background-color: #1e40af;
+  padding: 2rem 0;
 }
 
 /* Contenedor de la sección */
@@ -73,6 +74,7 @@
 
   .skills-section {
     height: 100vh;
+    padding: 0;
   }
 
   .skills-section h2 {
