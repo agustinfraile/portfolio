@@ -1,10 +1,18 @@
 /* Sección principal de Projects */
-.section-project {
+/* .section-project {
     width: 100%;
     background-color: var(--light-gray);
     padding: 1rem 0;
     height: auto;
+} */
+
+.section-project {
+    width: 100%;
+    background-color: var(-white);
+    padding: 1rem 0;
+    position: relative; /* Necesario para el efecto skew */
 }
+
 
 /* Contenedor del título */
 .section-project-container_title {
