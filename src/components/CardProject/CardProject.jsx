@@ -33,15 +33,15 @@ const CardProject = ({
                         />
                     </div>
 
-                    <a 
+                    {/* <a 
                         href={link} 
                         target="_blank" 
                         rel="noreferrer"
                     >
                         <button className="btn">
-                            Ver Repositorio
+                            Ver
                         </button>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </motion.div>

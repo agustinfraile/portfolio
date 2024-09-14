@@ -20,7 +20,7 @@ const Projects = () => {
 
       <div className='section-project-container_title'>
         <h2 data-aos="fade-up" data-aos-duration="1000">
-          Proyectos donde participé
+          Lo que hice
         </h2>
       </div>
 
