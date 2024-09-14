@@ -14,20 +14,20 @@ export const skills = [
         icon: Code,
         description: "Desarrollo de APIs robustas.",
         skills: ["Node.js", "Express"],
-        highlight: "Especializado en Node.js"
+        highlight: "Experiencia en Node.js"
     },
     {
         category: "Bases de Datos",
         icon: Database,
         description: "Diseño de bases de datos eficientes.",
-        skills: ["MySQL", "MongoDB"],
-        highlight: "Experto en MongoDB"
+        skills: ["PostgreSQL", "MongoDB"],
+        highlight: "Experiencia en PostgreSQL"
     },
     {
         category: "Herramientas",
         icon: Wrench,
         description: "Utilización de herramientas modernas para desarrollo.",
-        skills: ["Git", "Docker", "AWS"],
+        skills: ["Terminal", "Git", "Docker", "Figma"],
         highlight: "Dominio de CI/CD"
     },
 ];

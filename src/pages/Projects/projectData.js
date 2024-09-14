@@ -7,7 +7,7 @@ export const projectData = [
     {
         title: 'Huellitas',
         description: 'Portal en linea para adopción responsable de mascotas y apoyo a organizaciones que colaboran con el rescate y cuidado de animales domésticos.',
-        tech: ['React', 'Node.js', 'PostegreSQL'],
+        tech: ['React', 'Node.js', 'PostgreSQL'],
         imageUrl: `${huellitasGif}`,
         link: 'https://github.com/agustinfraile/Huellitas'
     },
