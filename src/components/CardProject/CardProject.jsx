@@ -1,14 +1,16 @@
 import './CardProject.css';
 
+import LazyLoad from 'react-lazyload';
 import { motion } from 'framer-motion';
 
 const CardProject = ({
-        title = 'Proyecto Example',
-        description = 'Descripción del proyecto',
-        tech = [],
-        imageUrl = '/placeholder.svg?height=200&width=300&text=Project',
-        link = '#'
-    }) => {
+    title = 'Proyecto Example',
+    description = 'Descripción del proyecto',
+    tech = [],
+    imageUrl = '/placeholder.svg?height=200&width=300&text=Project',
+    link = '#',
+    video = false
+}) => {
     return (
         <motion.div
             className="project-card"
@@ -23,15 +25,32 @@ const CardProject = ({
                         {Array.isArray(tech) && tech.length > 0 ? tech.join(', ') : 'Tecnologías no especificadas'}
                     </p>
                 </div>
+                <p className="description">{description}</p>
+                {/* <div className="image-container">
+                    <img
+                        src={imageUrl}
+                        alt={`${title} imagen`}
+                        className="project-image"
+                    />
+                </div> */}
+
                 <div className="card-content">
-                    <p className="description">{description}</p>
-                    <div className="image-container">
-                        <img
-                            src={imageUrl}
-                            alt={`${title} imagen`}
-                            className="project-image"
-                        />
-                    </div>
+                    <LazyLoad height={200} offset={100}>
+                        {video ? (
+                            <video
+                                className="project-image"
+                                src={video}
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                            />
+                        ) : (
+                            <img src={imageUrl} alt={title} className="project-image" />
+                        )}
+                    </LazyLoad>
+
+
 
                     {/* <a 
                         href={link} 

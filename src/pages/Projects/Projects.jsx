@@ -36,6 +36,7 @@ const Projects = () => {
             tech={project.tech}
             imageUrl={project.imageUrl}
             link={project.link}
+            video={project.video}
           />
         ))}
       </div>
