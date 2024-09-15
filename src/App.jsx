@@ -3,16 +3,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Error from './pages/Error/Error';
 
 import './App.css';
-import Navbar from './components/NavBar/NavBar';
+import Navbar from './components/Navbar/Navbar';
+
 
 function App() {
 
   return (
     <BrowserRouter>
 
-
       <Navbar />
-      
+
       <div className="App">
         <Routes>
           <Route exact path='/' element={<Home />} />
