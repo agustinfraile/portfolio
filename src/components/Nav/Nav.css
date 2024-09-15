@@ -1,0 +1,100 @@
+/* Estilos generales de la navbar */
+.navbar {
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  /* Contenedor de la navbar */
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  
+  /* Logo de la navbar */
+  .navbar-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Ícono del menú para móviles */
+  .menu-icon {
+    display: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  /* Menú de la navbar */
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Items del menú */
+  .navbar-item {
+    margin-left: 1.5rem;
+  }
+  
+  /* Enlaces del menú */
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #a5b4fc; 
+  }
+  
+  /* Estilos para el menú cuando está activo en móviles */
+  .navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+  
+  
+  }
+  
+  .navbar-menu.active .navbar-item {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .navbar-container {
+      padding: 0 1rem;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .navbar-menu {
+      display: none;
+    }
+  
+    .navbar-item {
+      margin-left: 0;
+    }
+  }
+  
