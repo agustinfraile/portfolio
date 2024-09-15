@@ -11,11 +11,18 @@ const Home = () => {
   return (
 
     <div className="all-container">
-      <Intro />
-      <About />
-      <Projects />
-      
-      <Footer />
+      <section id="home">
+        <Intro />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="contact">
+        <Footer />
+      </section>
     </div>
 
   )

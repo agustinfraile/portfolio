@@ -1,79 +1,79 @@
-import React, { useState } from 'react';
+import './Navbar.css'; 
 
-import cv from '../../assets/images/icons/cv-logo.png';
-import pdf from '../../assets/pdf/CV_FullStack_Fraile-Agustin.pdf';
+import { useState } from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Link } from 'react-scroll';
 
-import menu from '../../assets/images/icons/navbar/menu-light.png';
-import close from '../../assets/images/icons/navbar/x-light.png';
 
-import '../NavBar/NavBar.css';
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-const NavBar = () => {
+  const handleMenuClick = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-  const [isToggled, setIsToggled] = useState(false);
-
-  const toggleMenu = () => {
-    setIsToggled(!isToggled);
-  }
-
-  const handleClick = () => {
-    setIsToggled(false);
-  }
-
-  const handleDownload = (e) => {
-    e.preventDefault()
-    const link = document.createElement("a");
-    link.href = pdf;
-    link.download = "Agustin_Fraile-CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-  }
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
-    <div className='nav_cnt'>
-        <div className='nav_cnt-logos'>
-          <div className='nav_cnt-logos--icon'>
-
-          </div>
-
-          <div 
-            className='nav_cnt-logos--menu'
-            onClick={toggleMenu}
-          >
-            <img src={isToggled ? close : menu} alt="Menu" />
-          </div>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <a href="#" className="navbar-logo">
+          
+        </a>
+        <div className="menu-icon" onClick={handleMenuClick}>
+          <i className={menuOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
-        
-        {/* <div className='nav_cnt-logo'></div> */}
-        <div 
-          className={`navbar-toggle ${isToggled ? '' : 'invisible'}`}
-        >
-          <ul>
-            <a href="#inicio">
-              <li onClick={handleClick}>Inicio</li>
-            </a>
-            <a href="#sobre-mi">
-              <li onClick={handleClick}>Sobre mi</li>
-            </a>
-            <a href="#projects">
-              <li onClick={handleClick}>Proyectos</li>
-            </a>
-            <a href="#contact">
-              <li onClick={handleClick}>Contacto</li>
-            </a>
-          </ul>
-
-          <div 
-            className='nav_cv' 
-            onClick={handleDownload}
-            alt="Logo de curriculum" title='Descarga mi CV'
-          >
-            <img src={ cv } />
-          </div>
-        </div>
-    </div>
+        <ul className={menuOpen ? 'navbar-menu active' : 'navbar-menu'}>
+          <li className="navbar-item">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="navbar-link"
+              onClick={closeMenu}
+            >
+              Inicio
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="navbar-link"
+              onClick={closeMenu}
+            >
+              Sobre mí
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="navbar-link"
+              onClick={closeMenu}
+            >
+              Proyectos
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="navbar-link"
+              onClick={closeMenu}
+            >
+              Contacto
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
-export default NavBar
+export default Navbar;
