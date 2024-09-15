@@ -1,127 +1,69 @@
+@import '/src/assets/colors.css';
 
-/* CONTENEDOR GENERAL */
-.contact-cnt {
-    /* background-color: rgb(88, 81, 164); */
-    background-color: #4683FF;
-    width: 100%;
-    height: auto;
-    padding-top: 2em;
-    /* padding-bottom: 1em; */
+/* Sección principal de Contact */
+.section-contact {
+  width: 100%;
+  min-height: auto; 
+  background-color: var(--white);
+  padding: 1rem;
 }
 
-/* CONTENEDOR PARA LOS ICONOS DE RRSS */
-.contact_cnt-icons {
-    /* background-color: rgba(245, 245, 220, 0.486); */
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
+/* Contenedor del título */
+.section-contact-container_title {
+  width: 100%;
+  padding: 2rem 0; 
+  display: flex;
+  align-items: center;
 }
 
-/* CONTENEDOR DE TITULO DE ICONOS */
-.contact_cnt-title {
-    /* background-color: rgba(199, 199, 30, 0.486); */
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 2.5em 0;
+/* Título */
+.section-contact-container_title h3 {
+  width: 90%;
+  margin: 0 auto;
+  color: var(--dark-blue);
+  font-size: 1.8rem; 
+  padding: 1rem;
+  text-align: center; 
 }
 
-/* ESTILOS PARA EL TITULO */
-.contact_cnt-title h2 {
-    font-size: 2.2em;
-    text-align: center;
-    color: #FFF;
+/* Contenedor del formulario */
+.section-about-container_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
-/* CONTENEDOR PARA EL FORMULARIO */
-.contact_cnt-form {
-    background-color: #224180;
-    /* background-color: rgba(26, 120, 163, 0.486); */
-    
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+/* Media query para tablets (a partir de 768px) */
+@media (min-width: 768px) {
+  .section-contact-container_title h3 {
+    font-size: 2rem; 
+  }
+
+  .section-about-container_form {
+    padding: 2rem;
+    flex-direction: row; 
+  }
 }
 
-/* CONTENEDOR DE TITULO DE FORMULARIO */
-.contact_cnt-form-subtitle {
-    /* background-color: rgba(199, 199, 30, 0.486); */
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 2.5em 0;
-}
+/* Media query para pantallas grandes (a partir de 1024px) */
+@media (min-width: 1024px) {
+  .section-contact {
+    min-height: 100vh; 
+  }
 
-/* ESTILOS PARA EL SUBTITULO */
-.contact_cnt-form-subtitle h3 {
-    font-size: 1.6em;
-    text-align: center;
-    color: #FFF;
-}
+  .section-contact-container_title {
+    height: 20vh; 
+  }
 
-.contact_cnt-form-icon {
-    /* background-color: #4683FF; */
-    display: flex;
-    justify-content: center;
-}
+  .section-contact-container_title h3 {
+    font-size: 2.5rem; 
+  }
 
-/* 800px para adelante */
-@media (min-width: 800px) {
-    /* CONTENEDOR GENERAL */
-    .contact-cnt {
-        /* background-color: rgb(88, 81, 164); */
-        width: 100%;
-        height: 96vh;
-        padding-top: 5em;
-        padding-bottom: 1em;
-    }
-
-        /* CONTENEDOR PARA LOS ICONOS DE RRSS */
-        .contact_cnt-icons {
-            /* background-color: rgb(33, 101, 122); */
-            width: 90%;
-            height: 50vh;
-            margin: 1em auto;
-        }
-
-            /* CONTENEDOR DE TITULO DE ICONOS */
-            .contact_cnt-title {
-                /* background-color: rgba(199, 199, 30, 0.486); */
-                width: 100%;
-                height: auto;
-                margin: 0 auto;
-                padding: 2.5em 0;
-            }
-
-                /* ESTILOS PARA EL TITULO */
-                .contact_cnt-title h2 {
-                    font-size: 2.2em;
-                    text-align: center;
-                    color: #FFF;
-                }
-
-        /* CONTENEDOR PARA EL FORMULARIO */
-        .contact_cnt-form {
-            /* background-color: rgb(23, 140, 158); */
-            background-color: #224180;
-            width: 100%;
-            height: 40vh;
-            margin: 0 auto;
-        }
-
-        /* CONTENEDOR DE TITULO DE FORMULARIO */
-        .contact_cnt-form-subtitle {
-            /* background-color: rgba(199, 199, 30, 0.486); */
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-            padding: 2.5em 0;
-        }
-
-        /* ESTILOS PARA EL SUBTITULO */
-        .contact_cnt-form-subtitle h3 {
-            font-size: 1.6em;
-            text-align: center;
-            color: #FFF;
-        }
+  .section-about-container_form {
+    height: 80vh; 
+    padding: 3rem;
+  }
 }

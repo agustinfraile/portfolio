@@ -1,0 +1,44 @@
+.buttonCV_container {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: scale(100%);
+    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s, transform 0.6s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.buttonCV_container:hover {
+    background-color: #fff;
+    color: #1f1f1f;
+    border-color: #1f1f1f;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(110%);
+}
+
+.buttonCV_container:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+/* Ajustes para tablets */
+@media (min-width: 768px) {
+    .buttonCV_container {
+        font-size: 16px;
+        padding: 14px 28px;
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1024px) {
+    .buttonCV_container {
+        font-size: 18px;
+        padding: 16px 32px;
+    }
+}

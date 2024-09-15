@@ -1,0 +1,110 @@
+@import '/src/assets/colors.css';
+
+/* Formulario de contacto */
+.contact-form {
+  width: 90%; /* Ancho completo para móviles */
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--light-gray);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Inputs del formulario */
+.contact-form-input, .contact-form-textarea {
+  width: 100%;
+  margin-bottom: 1.5rem; /* Espaciado mayor entre campos */
+}
+
+.contact-form-input label,
+.contact-form-textarea label {
+  font-size: 1rem; /* Tamaño adecuado para móviles */
+  font-weight: 600;
+  color: var(--dark-blue);
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-input .contact-form-input-field,
+.contact-form-textarea .contact-form-textarea-field {
+  width: 100%;
+  padding: 0.8rem; /* Padding para mayor accesibilidad */
+  font-size: 1rem; /* Tamaño adecuado para móviles */
+  border-radius: 5px;
+  border: 1px solid var(--dark-blue);
+  background-color: var(--white);
+  color: var(--dark-blue);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.contact-form-input .contact-form-input-field:focus,
+.contact-form-textarea .contact-form-textarea-field:focus {
+  outline: none;
+  border-color: var(--primary); /* Cambiar color del borde al hacer foco */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Efecto de foco */
+}
+
+/* Mensajes de error */
+.contact-form-error {
+  color: var(--error);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Botón de envío */
+.contact-form-button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem; /* Tamaño adecuado para móviles */
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form-button:hover {
+  background-color: var(--primary);
+  transform: scale(1.02); /* Ligeramente más grande en hover */
+}
+
+.contact-form-button:active {
+  transform: scale(0.98); /* Ligeramente más pequeño al hacer click */
+}
+
+/* Media query para tablets (a partir de 768px) */
+@media (min-width: 768px) {
+  .contact-form {
+    width: 80%; /* Ancho mayor para tablets */
+    padding: 2rem;
+  }
+
+  .contact-form-input .contact-form-input-field,
+  .contact-form-textarea .contact-form-textarea-field {
+    font-size: 1.1rem; /* Tamaño mayor para tablets */
+    padding: 1rem;
+  }
+
+  .contact-form-button {
+    width: 60%; /* Botón más pequeño en tablets */
+    margin: 0 auto;
+  }
+}
+
+/* Media query para pantallas grandes (a partir de 1024px) */
+@media (min-width: 1024px) {
+  .contact-form {
+    width: 60%; /* Ancho ajustado para pantallas grandes */
+    padding: 2.5rem;
+  }
+
+  .contact-form-input .contact-form-input-field,
+  .contact-form-textarea .contact-form-textarea-field {
+    font-size: 1.2rem; /* Tamaño mayor para pantallas grandes */
+    padding: 1.2rem;
+  }
+
+  .contact-form-button {
+    width: 40%; /* Botón más pequeño en pantallas grandes */
+  }
+}

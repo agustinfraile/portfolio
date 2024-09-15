@@ -1,166 +1,84 @@
-
-/* CONTENEDOR GENERAL */
-.intro_cnt {
-    width: 100%;
-    height: auto;
-    /* background-color: rgba(180, 53, 53, 0.413); */
+/* Sección principal de Intro */
+.section-intro {
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
 }
 
-
-/* CONTENEDOR PARA EL PRIMER DIV */
-.first_cnt {
-    /* background-color: rgba(0, 0, 255, 0.227); */
-    background-color: #224180;
-    width: 100%;
-    height: auto;
-    padding: 4em 0;
+/* Contenedor principal del título */
+.section-intro_title-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(46, 46, 46);
 }
 
-/* CONTENEDOR PARA EL BORDE DE LA IMAGEN */
-.first_cnt-img {
-    /* background-color: rgba(255, 255, 255, 0.536); */
-    background-color: rgb(236, 236, 236);    
-    width: 16em;
-    height: 16em;
-    margin: 0 auto;
-    border-radius: 50%;
-    padding: .5em;
-    position: relative;
-    
+/* Contenedor del título y subtítulo */
+.section-intro_title-container--title {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-/* CONTENEDOR PARA LA IMAGEN  */
-.first_cnt-img--inside {
-    /* background-color: rgba(119, 19, 19, 0.456); */
-    background-color: #D9D9D9;
-    width: 15em;
-    height: 15em;
-    margin: 0 auto;
-    border-radius: 50%;
+/* Título (nombre) */
+.section-intro_title-container--title h1 {
+  width: 100%;
+  color: var(--white);
+  font-size: 2.5rem; 
+  text-align: center;
+  user-select: none;
 }
 
-.first_cnt-img--inside img {
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+/* Subtítulo (Typewriter) */
+.section-intro_title-container--title h3 {
+  width: 100%;
+  color: var(--white);
+  font-size: 1rem; 
+  text-align: center;
+  user-select: none;
+  margin: 1rem 0;
 }
 
-
-/* CONTENEDOR PARA EL SEGUNDO DIV */
-.sec_cnt {
-    /* background-color: rgba(0, 0, 128, 0.386); */
-    background-color: #4683FF;
-    width: 100%;
-    height: auto;
-    padding: 7em .5em;
+/* Contenedor del botón */
+.section-intro_title-container--button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; /* Ajustar el botón en móviles */
 }
 
-/* CONTENEDOR PARA EL DIV DE TEXTO */
-.sec_cnt-text {
-    /* background-color: rgb(91, 70, 38); */
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    padding: 1em;
+/* Ajustes para tablets (a partir de 768px) */
+@media (min-width: 768px) {
+  .section-intro_title-container--title h1 {
+    font-size: 3.5rem; 
+  }
+
+  .section-intro_title-container--title h3 {
+    font-size: 1.2rem; 
+    margin: 1.5rem 0;
+  }
 }
 
-/* ESTILOS PARA EL TITULO */
-.sec_cnt-text h1 {
-    color: #FFF;
-    font-size: 3em;
-    text-align: center;
-    font-weight: bold;
-}
+/* Ajustes para pantallas grandes (a partir de 1024px) */
+@media (min-width: 1024px) {
+  .section-intro {
+    height: 100vh; 
+    padding: 0;
+  }
 
-/* ESTILOS PARA EL PARRAFO */
-.sec_cnt-text p {
-    padding-top: 1em;
-    color: #FFF;
-    font-size: 1.4em;
-    text-align: center;
-    font-weight: bold;
-}
+  .section-intro_title-container--title h1 {
+    font-size: 5.5rem; 
+  }
 
-/* 800px para adelante */
-@media (min-width: 800px) {
-    /* CONTENEDOR GENERAL */
-    .intro_cnt {
-        width: 100%;
-        height: auto;
-        background-color: rgb(49, 84, 156);
-        display: flex;
-        padding-top: 0em;
-
-    }
-
-
-        /* CONTENEDOR PARA EL PRIMER DIV */
-        .first_cnt {
-            background-color: #224180;
-            width: 12em;
-            height: 100vh;
-            padding-top: 15em;
-            padding-left: 3em;
-            display: flex;
-            flex-direction: column;
-        }
-
-            /* CONTENEDOR PARA EL BORDE DE LA IMAGEN */
-            .first_cnt-img {
-                background-color: rgb(236, 236, 236);
-                width: 16em;
-                height: 16em;
-                margin: 0 auto;
-                border-radius: 50%;
-                padding: .5em;
-                /* position: absolute; */
-                z-index: 1;
-            }
-
-
-            /* CONTENEDOR PARA LA IMAGEN  */
-            .first_cnt-img--inside {
-                background-color: #D9D9D9;
-                width: 15em;
-                height: 15em;
-                margin: 0 auto;
-                border-radius: 50%;
-            }
-
-
-        /* CONTENEDOR PARA EL SEGUNDO DIV */
-        .sec_cnt {
-            background-color: #4683FF;
-            width: 100%;
-            height: 100vh;
-            padding-top: 17.5em;
-            padding-left: 7em;
-        }
-
-            /* CONTENEDOR PARA EL DIV DE TEXTO */
-            .sec_cnt-text {
-                background-color: rgba(91, 70, 38, 0);
-                width: 90%;
-                height: auto;
-                margin: 0 auto;
-            }
-
-            /* ESTILOS PARA EL TITULO */
-            .sec_cnt-text h1 {
-                color: #FFF;
-                font-size: 3em;
-                text-align: center;
-                font-weight: bold;
-            }
-
-            /* ESTILOS PARA EL PARRAFO */
-            .sec_cnt-text p {
-                padding-top: 1em;
-                color: #FFF;
-                font-size: 1.4em;
-                text-align: center;
-                font-weight: bold;
-            }
+  .section-intro_title-container--title h3 {
+    font-size: 1.5rem; 
+    margin: 2rem 0;
+  }
 }

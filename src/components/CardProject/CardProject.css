@@ -1,0 +1,100 @@
+@import '/src/assets/colors.css';
+
+
+/* La tarjeta ocupa el 100% del ancho en móviles */
+.project-card {
+    width: 100%;
+}
+
+/* Estilos generales de la tarjeta */
+.card {
+    background-color: #1e3a8a;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Efecto hover de la tarjeta */
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Estilos del encabezado de la tarjeta */
+.card-header {
+    margin-bottom: 15px;
+}
+
+/* Título de la tarjeta */
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+/* Descripción de la tarjeta */
+.card-description {
+    color: #bfdbfe; 
+    margin-bottom: 10px;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Espaciado en la descripción */
+.description {
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Imagen de la tarjeta */
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Botón */
+.btn {
+    background-color: #2563eb; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover en el botón */
+.btn:hover {
+    background-color: #1d4ed8; 
+}
+
+/* Ajustes para pantallas más grandes (tablets y PC) */
+
+/* En tablets (a partir de 768px), las tarjetas ocupan 45% del ancho */
+@media (min-width: 768px) {
+    .project-card {
+        width: 45%;
+    }
+}
+
+/* En pantallas grandes (a partir de 1024px), las tarjetas siguen ocupando 45% del ancho */
+@media (min-width: 1024px) {
+    .project-card {
+        width: 45%;
+    }
+}

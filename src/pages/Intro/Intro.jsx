@@ -1,42 +1,46 @@
-import React from 'react';
-import profilePicture from '../../assets/images/image-profile.png';
 import AOS from 'aos';
+import Typewriter from 'typewriter-effect';
+import ButtonCv from '../../components/ButtonCv/ButtonCv';
+
 
 import './Intro.css';
 
 const Intro = () => {
-  AOS.init();
-  return (
-    <div className='intro_cnt' id='inicio'>
-        <div className='first_cnt'>
+    AOS.init();
 
-            <div 
-                className='first_cnt-img'                  data-aos="fade-right"
-                data-aos-duration='2000'
-            >
+    return (
+        <section className='section-intro'>
 
-               <div className='first_cnt-img--inside' >
-                    <img src={profilePicture} alt="Imagen de perfil" />
-               </div>
+            <div className='section-intro_title-container'>
+                <div className='section-intro_title-container--title'>
+                    <h1
+                        data-aos='fade-right'
+                        data-aos-duration='2500'
+                        data-aos-delay='100'
+                        data-aos-once='true'
+                    >
+                        AGUSTIN FRAILE
+                    </h1>
+                    <h3>
+                        <Typewriter
+                            options={{
+                                strings: ['< Desarrollador web />'],
+                                autoStart: true,
+                                loop: true,
+                                delay: 100,
+                                deleteSpeed: 50,
+                            }}
+                        />
+                    </h3>
 
+                    <div className='section-intro_title-container--button'>
+                        <ButtonCv />
+                    </div>
+                </div>
             </div>
 
-
-        </div>
-        <div className='sec_cnt'>
-            <div 
-                className='sec_cnt-text'
-                data-aos="fade-down"
-                data-aos-duration='2000'
-            >
-                <h1>Hola! soy Agustin</h1>
-                <p>
-                Soy un desarrollador con experiencia en dar vida a proyectos digitales. Me apasiona el mundo del desarrollo web. Si estas buscando un desarrollador con ganas de trabajar en proyectos interesantes, no dudes en contactarme!
-                </p>
-            </div>
-        </div>
-    </div>
-  )
+        </section>
+    )
 }
 
-export default Intro
+export default Intro    

@@ -1,22 +1,29 @@
-import React from 'react';
+import './Home.css';
+
+import Footer from '../../components/Footer/Footer';
 import About from '../About/About';
-import Contact from '../Contact/Contact';
 import Intro from '../Intro/Intro';
 import Projects from '../Projects/Projects';
 
-import './Home.css';
 
 const Home = () => {
   return (
-    
+
     <div className="all-container">
-         {/* <NavBar /> */}
+      <section id="home">
         <Intro />
-        <About/>
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="projects">
         <Projects />
-        <Contact />
-       </div>
-    
+      </section>
+      <section id="contact">
+        <Footer />
+      </section>
+    </div>
+
   )
 }
 

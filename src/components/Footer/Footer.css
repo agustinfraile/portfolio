@@ -1,0 +1,77 @@
+@import '/src/assets/colors.css';
+
+
+.section-footer {
+    width: 100%;
+    height: 20vh;
+    /* background-color: var(--dark-blue); */
+    background-color: rgb(46, 46, 46);
+    display: flex;
+}
+
+.section-footer-left {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: antiquewhite; */
+}
+
+.section-footer-left_icons {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: thistle; */
+}
+
+.section-footer-left_icons a {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.section-footer-left_icons a:hover {
+    opacity: 0.6;
+}
+
+.section-footer-left_icons img {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 0 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.section-footer-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-footer-left-up {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--white);
+    border-radius: 50%;   
+}
+
+
+.section-footer-left-up img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

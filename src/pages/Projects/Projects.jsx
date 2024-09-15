@@ -1,34 +1,47 @@
-import React from 'react';
-import AOS from 'aos';
-import Carrusel from '../../components/Carrusel/Carrusel';
-import { cards } from '../../data';
 import './Projects.css';
+
+import CardProject from '../../components/CardProject/CardProject';
+import AOS from 'aos';
+import { projectData } from './projectData';
+import { useEffect } from 'react';
+
 
 const Projects = () => {
 
-  AOS.init();
+  useEffect(() => {
+    AOS.init({
+      duration: 800, 
+      offset: 100,   
+    });
+  }, []);
 
   return (
-    <div className='project-cnt' id='projects'>
-        <div 
-          className='project-cnt_title'
-          data-aos="fade-up"
-          data-aos-duration='2000'
-        >
-            <h3>
-                Proyectos en los que trabajé
-            </h3>
-        </div>
-        
-        <div 
-          className='project-cnt_carrousel' 
-          data-aos="fade-down"
-          data-aos-duration='2000'
-        >
-            <Carrusel cards={cards}/>
-        </div>
-    </div>
-  )
+    <section className='section-project'>
+
+      <div className='section-project-container_title'>
+        <h2 data-aos="fade-up" data-aos-duration="1000">
+          Lo que hice
+        </h2>
+      </div>
+
+      <div
+        className='section-project-container_cards'
+
+      >
+        {projectData.map((project, index) => (
+          <CardProject
+            key={index}
+            title={project.title}
+            description={project.description}
+            tech={project.tech}
+            imageUrl={project.imageUrl}
+            link={project.link}
+            video={project.video}
+          />
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Projects
