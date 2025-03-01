@@ -67,6 +67,11 @@
     border-radius: 8px;
 }
 
+/* Estilos para cuando la imagen no se puede cargar */
+/* .hidden {
+    display: none;
+} */
+
 /* Botón */
 .btn {
     background-color: #2563eb; 

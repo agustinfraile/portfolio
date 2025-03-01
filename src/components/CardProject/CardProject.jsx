@@ -2,6 +2,8 @@ import './CardProject.css';
 
 import LazyLoad from 'react-lazyload';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import CardLoading from '../CardLoading/CardLoading';
 
 const CardProject = ({
     title = 'Proyecto Example',
@@ -11,6 +13,14 @@ const CardProject = ({
     link = '#',
     video = false
 }) => {
+
+    const [loading, setLoading] = useState(true);
+
+    const handleLoad = () => {
+        setLoading(false);
+    }
+
+
     return (
         <motion.div
             className="project-card"
@@ -35,6 +45,10 @@ const CardProject = ({
                 </div> */}
 
                 <div className="card-content">
+
+                    { loading && <CardLoading /> }
+
+
                     <LazyLoad height={200} offset={100}>
                         {video ? (
                             <video
@@ -44,6 +58,8 @@ const CardProject = ({
                                 loop
                                 muted
                                 playsInline
+                                onLoadedData={handleLoad}
+                                style={loading ? { display: 'none' } : {}}
                             />
                         ) : (
                             <img src={imageUrl} alt={title} className="project-image" />
